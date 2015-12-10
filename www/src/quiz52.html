@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"52\",\"name\":\"Cuestionario Lecci\\u00f3n 15\"},\"questions\":[{\"answers\":[{\"texto\":\"was in the red\",\"value\":true},{\"texto\":\"have a clue\",\"value\":false},{\"texto\":\"is in the red\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EHe didn\\u0027t go on&nbsp; vacation last years because he ______\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"take\",\"value\":false},{\"texto\":\"bring\",\"value\":true},{\"texto\":\"brought\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003ECan you ____ a spoon, please?\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"broad\",\"value\":true},{\"texto\":\"wide\",\"value\":false},{\"texto\":\"wider\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003ENew York has ____ and long avenues.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"knew\",\"value\":false},{\"texto\":\"saw\",\"value\":false},{\"texto\":\"write\",\"value\":true}],\"question_text\":\"\\u003Cspan\\u003EDid you brother _____ to you last week?\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"lost\",\"value\":true},{\"texto\":\"saved\",\"value\":false},{\"texto\":\"built\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI used your book because I _____ mine.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"is in the red\",\"value\":true},{\"texto\":\"have a clue\",\"value\":false},{\"texto\":\"got cold feet\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMy mom won\\u0027t give me any money for the trip because she ________\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"with\",\"value\":true},{\"texto\":\"without\",\"value\":false},{\"texto\":\"across\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMary is working ____ my brother. She is a nurse\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"brought\",\"value\":true},{\"texto\":\"built\",\"value\":false},{\"texto\":\"lost\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EHave you _______ me a glass of water?\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"for\",\"value\":true},{\"texto\":\"during\",\"value\":false},{\"texto\":\"until\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI have studied ____ four hours\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"until\",\"value\":true},{\"texto\":\"during\",\"value\":false},{\"texto\":\"too\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan\\u003EThe accident happened ____ the night\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

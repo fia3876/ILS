@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"20\",\"name\":\"Cuestionario Lecci\\u00f3n 26\"},\"questions\":[{\"answers\":[{\"texto\":\"told\",\"value\":true},{\"texto\":\"speak\",\"value\":false},{\"texto\":\"said\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EShe ____ me everything about the party\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"whispering\",\"value\":true},{\"texto\":\"gossip\",\"value\":false},{\"texto\":\"chatters\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThey were _____ because the baby was sleeping\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"full of\",\"value\":true},{\"texto\":\"addicted to\",\"value\":false},{\"texto\":\"good at\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThis box is _____ pencils. You can use them&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"There is\",\"value\":true},{\"texto\":\"There would have been\",\"value\":false},{\"texto\":\"Would there be\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EDon\\u0027t go in the shop. ______ an argument&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"already\",\"value\":true},{\"texto\":\"still\",\"value\":false},{\"texto\":\"yet\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EWe have eaten _____&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"time cures\",\"value\":true},{\"texto\":\"no pain, no gain\",\"value\":false},{\"texto\":\"when in Rome, do as the Romans do\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EShe is heartbroken now, but _____ everything\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"said\",\"value\":true},{\"texto\":\"speak\",\"value\":false},{\"texto\":\"told\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EShe _____ something to me, but I didn\\u0027t understand her&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"gossip\",\"value\":true},{\"texto\":\"utter\",\"value\":false},{\"texto\":\"chatters\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI don\\u0027t like them because they _____ all the time\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"fascinated by\",\"value\":true},{\"texto\":\"full off\",\"value\":false},{\"texto\":\"addicted to\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMy friend is _____ the African culture\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"there would have been\",\"value\":true},{\"texto\":\"there would be\",\"value\":false},{\"texto\":\"there be\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EHe saw the sign at the last minute; otherwise ______ an accident\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

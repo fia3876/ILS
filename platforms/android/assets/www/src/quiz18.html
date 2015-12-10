@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"18\",\"name\":\"Cuestionario Lecci\\u00f3n 9\"},\"questions\":[{\"answers\":[{\"texto\":\"has John bought\",\"value\":true},{\"texto\":\"hasn\\u0027t done\",\"value\":false},{\"texto\":\"Have you learned\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EWhat _______ at the shopping center?&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"have not\",\"value\":true},{\"texto\":\"hadn\\u0027t\",\"value\":false},{\"texto\":\"am haven\\u0027t&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI ____ ____ been traveling this summer.&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"An old bag\",\"value\":false},{\"texto\":\"tidy boy\",\"value\":false},{\"texto\":\"naughty boy\",\"value\":true}],\"question_text\":\"\\u003Cspan\\u003EUn ni&Atilde;&plusmn;o travieso\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"children\",\"value\":false},{\"texto\":\"english\",\"value\":true},{\"texto\":\"germans\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EThe _____ are playing in the garden.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"pelea\",\"value\":false},{\"texto\":\"dusputa\",\"value\":true},{\"texto\":\"argumentar\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EDispute\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"have you planned\",\"value\":true},{\"texto\":\"have you learned\",\"value\":false},{\"texto\":\"have not drunk\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan\\u003EWhere ______ the party?\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"haven\\u0027t known\",\"value\":true},{\"texto\":\"have been together\",\"value\":false},{\"texto\":\"have you ever won\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI saw Mike last night, but I ______ anything about him for a long time\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"A tidy girl&nbsp;\",\"value\":true},{\"texto\":\"A man rich and loyal\",\"value\":false},{\"texto\":\"A fast, red car\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EUna ni&Atilde;&plusmn;a ordenada\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"I haven\\u0027t\",\"value\":true},{\"texto\":\"have I\",\"value\":false},{\"texto\":\"have not\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI ______ been studying\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"tartar , discutir\",\"value\":true},{\"texto\":\"encima de\",\"value\":false},{\"texto\":\"volar (past)\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EDeal with something\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"15\",\"name\":\"Cuestionario Lecci\\u00f3n 18\"},\"questions\":[{\"answers\":[{\"texto\":\"return\",\"value\":true},{\"texto\":\"misunderstand\",\"value\":false},{\"texto\":\"went\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EI don\\u0027t want to _______ to that hospital because they mistreated me\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"forgotten\",\"value\":true},{\"texto\":\"fought\",\"value\":false},{\"texto\":\"sent\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003ESue has _____ her umbrella and it\\u0027s raining a lot\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"went\",\"value\":true},{\"texto\":\"started\",\"value\":false},{\"texto\":\"moved\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EHe ____ to university at the age of eighteen and studied law\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"filled out\",\"value\":true},{\"texto\":\"found out\",\"value\":false},{\"texto\":\"hang up\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EHe ____ his application form and gave it to the secretary\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"hang\",\"value\":true},{\"texto\":\"looked\",\"value\":false},{\"texto\":\"found\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EYou can _______ you coat up in the hall&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"is in the red\",\"value\":true},{\"texto\":\"have a clue\",\"value\":false},{\"texto\":\"got cold feet\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMy mom won\\u0027t give me any money for the trip because she ________\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"suburbs\",\"value\":true},{\"texto\":\"carpet\",\"value\":false},{\"texto\":\"spade\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMary doesn\\u0027t come to downtown very often because she lives in the_________&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"pointed out\",\"value\":true},{\"texto\":\"interrupt\",\"value\":false},{\"texto\":\"observed\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EUse a pencil to fill out your test sheet - the teacher _____\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"for\",\"value\":true},{\"texto\":\"during\",\"value\":false},{\"texto\":\"until\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI have studied ____ four hours\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"must go to\",\"value\":true},{\"texto\":\"must\",\"value\":false},{\"texto\":\"should\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EWe _______bed early because we have to wake up very early tomorrow&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body.ils-main-page {
+
+  #page-content {
+    height: auto;
+    min-height: inherit;
+    #region-main-box {
+      float: none;
+      left: 0;
+      position: relative;
+      width: 100%;
+      #region-post-box {
+        float: none;
+        left: 0;
+        margin-left: 0;
+        position: relative;
+        width: 100%;
+        #region-main-wrap {
+          float: none;
+          position: relative;
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"53\",\"name\":\"Cuestionario Lecci\\u00f3n 24\"},\"questions\":[{\"answers\":[{\"texto\":\"bid\",\"value\":true},{\"texto\":\"bit\",\"value\":false},{\"texto\":\"fed\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EWhen you ____ for something, you can get a better price\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"has been cooking\",\"value\":true},{\"texto\":\"have been teaching\",\"value\":false},{\"texto\":\"would been traveling\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EMom ____ all morning&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"pleased with\",\"value\":true},{\"texto\":\"guilty of\",\"value\":false},{\"texto\":\"proud of\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EMy parents are _____ my grades&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"rented\",\"value\":true},{\"texto\":\"hired\",\"value\":false},{\"texto\":\"notice\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003E&nbsp;I\\u0027ve _____ an apartment downtown\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"hit\",\"value\":true},{\"texto\":\"threw\",\"value\":false},{\"texto\":\"lend\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThe player _____ the ball and scored one point\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"split\",\"value\":true},{\"texto\":\"bled\",\"value\":false},{\"texto\":\"upset\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMy friend_________ his lunch with me, I forgot mine\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"suburbs\",\"value\":true},{\"texto\":\"carpet\",\"value\":false},{\"texto\":\"spade\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EMary doesn\\u0027t come to downtown very often because she lives in the_________&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"I\\u0027ve experienced this issue personally\",\"value\":true},{\"texto\":\"One disadvantage of\",\"value\":false},{\"texto\":\"From my point of view\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003E_____________ and I think a city is a more comfortable place to live\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"giving\",\"value\":true},{\"texto\":\"down\",\"value\":false},{\"texto\":\"went\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EThe news stand is_______ papers away, these papers are free\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"must go to\",\"value\":true},{\"texto\":\"must\",\"value\":false},{\"texto\":\"should\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EWe _______bed early because we have to wake up very early tomorrow&nbsp;\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

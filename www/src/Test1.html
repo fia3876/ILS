@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"56\",\"name\":\"Evaluaci\\u00f3n General A2\"},\"questions\":[{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\neaten out\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nate out\",\"value\":true}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EI ____________ last night because I didn\\u0027t want to cook&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"told\",\"value\":true},{\"texto\":\"speak\",\"value\":false},{\"texto\":\"said\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EShe ____ me everything about the party\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"clever at\",\"value\":true},{\"texto\":\"capable of\",\"value\":false},{\"texto\":\"bored with\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EJohn is really______ languages, he speaks three of them\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"looking for\",\"value\":true},{\"texto\":\"makes up\",\"value\":false},{\"texto\":\"pick me up\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003E&nbsp;I was _____ you because I need your help\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"past\",\"value\":true},{\"texto\":\"near\",\"value\":false},{\"texto\":\"along\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EI arrived home _____ midnight yesterday.\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"blew up\",\"value\":true},{\"texto\":\"went\",\"value\":false},{\"texto\":\"down\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThe truck crashed and then it _________&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"has the last say\",\"value\":true},{\"texto\":\"is in a hole\",\"value\":false},{\"texto\":\"have a clue\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EYou can not talk to my sister. She always _____&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"are on board\",\"value\":true},{\"texto\":\"cuts no ice with\",\"value\":false},{\"texto\":\"was on fire\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EAll the passengers_______, so we can leave&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"sat\",\"value\":true},{\"texto\":\"sits\",\"value\":false},{\"texto\":\"left\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EShe ____ on the carpet because there were no free seats\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"broad\",\"value\":true},{\"texto\":\"wide\",\"value\":false},{\"texto\":\"wider\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003ENew York has ____ and long avenues.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"will have\",\"value\":true},{\"texto\":\"will be\",\"value\":false},{\"texto\":\"will not have\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EMy brother__________ arrived by Monday\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"read\",\"value\":true},{\"texto\":\"said\",\"value\":false},{\"texto\":\"fell\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EI ______ that book because you said it was very good\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"went\",\"value\":true},{\"texto\":\"started\",\"value\":false},{\"texto\":\"moved\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EHe ____ to university at the age of eighteen and studied law\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

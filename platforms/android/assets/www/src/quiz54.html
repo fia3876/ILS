@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"54\",\"name\":\"Evaluaci\\u00f3n General B1\"},\"questions\":[{\"answers\":[{\"texto\":\"being&nbsp; &nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nbeen&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwill&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan lang=\\u0022ES\\u0022\\u003EMy friends have never_________ used to chatting&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"bed\",\"value\":true},{\"texto\":\"bad\",\"value\":false},{\"texto\":\"only\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003Ecuarto, habitaci&Atilde;&sup3;n &nbsp;________ room.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"delighted\",\"value\":true},{\"texto\":\"bell\",\"value\":false},{\"texto\":\"ground\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EThey were_________ by the sight of the mountains\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"waiting on\",\"value\":true},{\"texto\":\"held up\",\"value\":false},{\"texto\":\"passed out\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThe waiter was ____ tables very kindly&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nharmful&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ndamaging&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\npainful&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EStress can be really________ to your health. You should learn some relaxation techniques&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ninterest&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nadvice&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nresponsibility&nbsp; &nbsp;&nbsp;\",\"value\":true}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EShe is a mature person and she always takes_________ for her actions\\u003C\\/span\\u003E&nbsp; &nbsp;&nbsp;\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"is\",\"value\":true},{\"texto\":\"are\",\"value\":false},{\"texto\":\"be\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EThere ______ neither sugar nor milk. We cannot make the cake.\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ngun\",\"value\":true},{\"texto\":\"bed\",\"value\":false},{\"texto\":\"dark\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EI\\u0027m not the son of a________. My father is a plumber\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"advanced\",\"value\":true},{\"texto\":\"unfamiliar\",\"value\":false},{\"texto\":\"fresh\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThe scientists are testing their most _____ invention&nbsp;\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ncould&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nonly&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nhave&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EIf only I_________ go to that party&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"paced\",\"value\":true},{\"texto\":\"toddles\",\"value\":false},{\"texto\":\"stepped\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EMy father ______ up and down because he was nervous\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ntell me\\r\\noff&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ntalk back\\r\\nto&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ntakes\\r\\nafter&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EMy parents don\\u0027t usually _____. They talk to me seriously&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"are brought\",\"value\":true},{\"texto\":\"denied\",\"value\":false},{\"texto\":\"is served\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003ECups and glasses _____ by her.\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nis\",\"value\":true},{\"texto\":\"are\",\"value\":false},{\"texto\":\"by\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp class=\\u0022p1\\u0022\\u003EThere______ neither sugar nor milk. We cannot make the cake\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwon&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ngames&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nbeat&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003ESpain _____ the World Cup in two thousand and ten&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

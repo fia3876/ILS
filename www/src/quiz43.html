@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"43\",\"name\":\"Cuestionario Lecci\\u00f3n 8\"},\"questions\":[{\"answers\":[{\"texto\":\"with\",\"value\":true},{\"texto\":\"for\",\"value\":false},{\"texto\":\"apply\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EYou\\u0027re right. I agree________ you\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"left\",\"value\":true},{\"texto\":\"right\",\"value\":false},{\"texto\":\"straight\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003ETurn ________ &nbsp;=&nbsp;Gire a la izquierda\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"out\",\"value\":true},{\"texto\":\"in\",\"value\":false},{\"texto\":\"up\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EI\\u0027m not going_______ next Friday night. I\\u0027m staying in\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"has\",\"value\":true},{\"texto\":\"was\",\"value\":false},{\"texto\":\"been\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EShe_______ learned English\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"gotten\",\"value\":true},{\"texto\":\"made\",\"value\":false},{\"texto\":\"have\",\"value\":false}],\"question_text\":\"\\u003Cspan\\u003EHe has_________ a better place in the firm\\u003C\\/span\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\u00a1Ten cuidado!\",\"value\":true},{\"texto\":\"no llegues tarde\",\"value\":false},{\"texto\":\"s\\u00f3lo hazlo\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EBeware!&nbsp;\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"No llegues tarde\",\"value\":true},{\"texto\":\"\\u00a1Sientate!\",\"value\":false},{\"texto\":\"Limpia este desastre\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EJust don\\u0027t be late =\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"right\",\"value\":true},{\"texto\":\"left\",\"value\":false},{\"texto\":\"straight\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003ETurn ______ = Gire a la derecha\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"has\",\"value\":true},{\"texto\":\"was\",\"value\":false},{\"texto\":\"are\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EShe ____ learned English\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"been\",\"value\":true},{\"texto\":\"are\",\"value\":false},{\"texto\":\"was\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EI have _____ at school this morning\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

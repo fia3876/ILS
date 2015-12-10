@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/moodle_inherit.js",
+        "scripts/prototypes/*.js",
+        "scripts/jstorage.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/styles.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+
+  },
+  "paths":{
+    "source": "./app/assets/",
+    "dist": "./app/dist/",
+    "root": "./app/"
+  }
+}

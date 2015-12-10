@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"17\",\"name\":\"Cuestionario Lecci\\u00f3n 34\"},\"questions\":[{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\npassed&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nlast&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nelapsed&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EFour weeks _____ before we met again&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nneedn\\u0027t&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nshouldn\\u0027t&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nought to&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EThey ____ be gossiping about anybody. They don\\u0027t like it&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nliked playing&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nlikes\\r\\nreading&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nlike\\r\\ntaking&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003ERachel _____ computer games, but she is fed up now&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nas&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nas long\\r\\nas&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nnow that&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EI\\u0027m reading a book _____ I\\u0027m baking an orange cake&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nblue-blooded&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ngoes over\\r\\nthe top&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ngo over\\r\\nthe top&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EHe keeps saying that he is _____ . It\\u0027s quite annoying&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"immediately\",\"value\":true},{\"texto\":\"as long as\",\"value\":false},{\"texto\":\"now that\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EI called him because I was feeling blue and he came ______\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"was nosing around\",\"value\":true},{\"texto\":\"boasts about\",\"value\":false},{\"texto\":\"took no notice of\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EMy mom _____ my room when I arrived home yesterday\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"can\",\"value\":true},{\"texto\":\"may\",\"value\":false},{\"texto\":\"must\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EHe ____ be playing chess or something similar\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"breaks in on\",\"value\":true},{\"texto\":\"comes over\",\"value\":false},{\"texto\":\"putting some stuff away\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EI don\\u0027t like talking to your friend because she always _____ &nbsp;me\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"as sure as eggs is eggs\",\"value\":true},{\"texto\":\"goes over the top\",\"value\":false},{\"texto\":\"blue-blooded\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003ECharles is lying. I\\u0027m _____\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

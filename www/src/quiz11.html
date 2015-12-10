@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"11\",\"name\":\"Cuestionario Lecci\\u00f3n 33\"},\"questions\":[{\"answers\":[{\"texto\":\"being&nbsp; &nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nbeen&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwill&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan lang=\\u0022ES\\u0022\\u003EMy friends have never_________ used to chatting&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ninformation&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ncall&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\npay\\r\\nstation&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EYou want to know a phone number:___________&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ninterest&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nadvice&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nresponsibility&nbsp; &nbsp;&nbsp;\",\"value\":true}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EShe is a mature person and she always takes_________ for her actions\\u003C\\/span\\u003E&nbsp; &nbsp;&nbsp;\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwith&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nfor&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nthis&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EIt\\u0027s quite strange________ me to not be able to smoke in a pub. I am not used to it yet&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nget&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ngot&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nmade&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EI fulfill my duties because I don\\u0027t want to__________ into trouble&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"have\",\"value\":true},{\"texto\":\"need to\",\"value\":false},{\"texto\":\"had\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EThey must_________ learned something important there\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"this\",\"value\":true},{\"texto\":\"for\",\"value\":false},{\"texto\":\"with\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EI believe_________ is a good idea because we could go out tonight\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"page out\",\"value\":true},{\"texto\":\"advice\",\"value\":false},{\"texto\":\"interest\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan\\u003EYou should take a ________ of your own book when it comes to relationships\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"pay station\",\"value\":true},{\"texto\":\"wire\",\"value\":false},{\"texto\":\"information\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EA public coin-operated telephone: ___________\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"will\",\"value\":true},{\"texto\":\"being\",\"value\":false},{\"texto\":\"been\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EShe__________ get used to cooking\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

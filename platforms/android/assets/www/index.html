@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/styles/main.css">
+</head>
+<body class="login">
+<div id="page-login-index" class="clearfix">
+    <div id="page-header">
+        <h1 class="headermain"> | ILS - Inglés Online</h1>
+    </div>
+    <div id="page-content" class="clearfix">
+        <div class="region-content">
+            <h2>Bienvenidos a la Plataforma Educativa</h2>
+            <figure>
+                <img src="assets/images/ILS.svg" class="logo">
+            </figure>
+            <h2 class="title-box">Inicia Sesión</h2>
+            <span id="maincontent"></span>
+
+            <div class="loginbox clearfix onecolumn">
+                <div class="loginpanel">
+                    <h2>Entrar</h2>
+
+                    <div class="subcontent loginsub">
+                        <div class="loginerrors">
+                            <span id="loginerrormessage" class="accesshide" href="#">
+                                Datos erróneos. Por favor, inténtelo otra vez.
+                            </span>
+                        </div>
+                        <form action="" method="post" id="login" style="text-align: center">
+                            <div class="loginform">
+                                <div class="form-label"><label for="username">Nombre de usuario</label></div>
+                                <div class="form-input">
+                                    <input type="text" name="username" id="username" size="15" value=""/>
+                                </div>
+                                <div class="clearer"><!-- --></div>
+                                <div class="form-label"><label for="password">Contraseña</label></div>
+                                <div class="form-input">
+                                    <span id="advertencia"></span>
+                                    <input type="password" name="password" id="password" size="15" value=""/>
+                                    <input type="submit" id="loginbtn" value="Entrar"/>
+                                </div>
+                            </div>
+                            <div class="clearer"><!-- --></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page-footer">
+        <ul class="main-footer">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+        </ul>
+        <span>©2014</span>
+    </div>
+</div>
+</body>
+</html>

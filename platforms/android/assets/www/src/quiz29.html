@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ILS</title>
+    <script src="/dist/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/main.css">
+</head>
+<body id="page-course-view-flexsections"
+      class="format-flexsections  path-course path-course-view pagelayout-course side-pre-only quiz">
+<div id="page">
+    <div id="page-header" class="clearfix">
+        <a class="logoImage" href="/main.html">
+            <h1 class="headermain">ILS - Inglés Online</h1>
+        </a>
+
+        <div class="headermenu">
+            <!--<div class="logininfo">-->
+            <!--Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=25" title="Ver perfil">Alumno1 [ILS]</a> -->
+            <!--(<a href="/index.html">Salir</a>)-->
+            <!--</div>-->
+            <a class="logout" href="/index.html"></a>
+        </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <div id="page-content">
+        <div id="region-main-box">
+            <div id="region-post-box">
+                <div id="region-main-wrap">
+                    <div id="region-main">
+                        <div class="header backto">
+                            <a href="javascript:history.back()">
+                                <img alt="" class="smallicon" title="" src="/dist/images/up.svg"><span
+                                    class="backto-text">Back</span>
+                            </a>
+                        </div>
+                        <h1 style="text-align: center;">Evaluation</h1>
+
+                        <div id="assessment">
+                            <div style="text-align: center">
+                                Press the <strong>start</strong> button to begin your test.<br>
+                                <button id="begin" class="btn">Start</button>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var json = '{\"examen\":{\"id\":\"29\",\"name\":\"Cuestionario Lecci\\u00f3n 36\"},\"questions\":[{\"answers\":[{\"texto\":\"catch your attention\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ntaking a\\r\\nbreak&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nsave time&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cp\\u003E\\u003Cspan lang=\\u0022ES\\u0022\\u003EShe laughs so loud because she wants to ______&nbsp;\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ndowny&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nsmooth&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ndowny&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EWe went to a _______ pub last night; I think you\\u0027ll like it\\u003C\\/span\\u003E&nbsp; &nbsp;&nbsp;\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwas\\r\\ncrowded with&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ninvolved\\r\\nme in&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nwas\\r\\nfurious with&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EThe theater _______ children when we arrived&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nchecks up\\r\\non&nbsp; &nbsp;&nbsp;\",\"value\":true},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\ncalled\\r\\nthe party off&nbsp; &nbsp;&nbsp;\",\"value\":false},{\"texto\":\"\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\nshowing\\r\\noff&nbsp; &nbsp;&nbsp;\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E \\u003Cspan lang=\\u0022ES\\u0022\\u003EPaul _______ his parents\\u0027 house every month to make sure that everything is fine&nbsp;\\u003C\\/span\\u003E\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"if\",\"value\":true},{\"texto\":\"unless\",\"value\":false},{\"texto\":\"but\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003E\\u003Cspan lang=\\u0022ES\\u0022\\u003EThey won\\u0027t take a walk ______ they are tired&nbsp;\\u003C\\/span\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"as if\",\"value\":true},{\"texto\":\"as though\",\"value\":false},{\"texto\":\"so as to\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EI don\\u0027t know what\\u0027s happening. It\\u0027s ____ he wanted to tell me something important&nbsp;\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"be a good idea\",\"value\":true},{\"texto\":\"looks down\",\"value\":false},{\"texto\":\"never\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EIt would _______ for you to have a vacation\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"polished\",\"value\":true},{\"texto\":\"slippery\",\"value\":false},{\"texto\":\"smooth\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EHe is very polite and he has some ______ manners\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"had driven\",\"value\":true},{\"texto\":\"had finished\",\"value\":false},{\"texto\":\"had enough\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EThey wouldn\\u0027t have had the accident if Kate ______ carefully\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"},{\"answers\":[{\"texto\":\"called the party off\",\"value\":true},{\"texto\":\"showing off\",\"value\":false},{\"texto\":\"ooks out for\",\"value\":false}],\"question_text\":\"\\u003Cp\\u003EWe have _______. Everybody is out of town next weekend\\u003Cbr\\u003E\\u003C\\/p\\u003E\\n\",\"question_type\":\"multichoice\"}]}';
+
+                                var examen = new Examen();
+                                examen.loadJson(json);
+
+                                $('#begin').click(function () {
+                                    examen.setRenderContainer('#assessment');
+                                    examen.renderExamen();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+    <div id="page-footer" class="clearfix">
+        <!-- <p class="helplink"><a href="http://docs.moodle.org/27/es/course/view/flexsections"><img class="iconhelp icon-pre" alt="Moodle Docs para esta página" title="Moodle Docs para esta página" src="http://192.168.1.76/ingles/theme/image.php/wlingua/core/1445790899/docs" />Moodle Docs para esta página</a></p>
+        <div class="logininfo">Usted se ha identificado como <a href="http://192.168.1.76/ingles/user/profile.php?id=2" title="Ver perfil">Administrador [SIL]</a> (<a href="http://192.168.1.76/ingles/login/logout.php?sesskey=6oEqZKCPPs">Salir</a>)</div><div class="homelink"><a href="http://192.168.1.76/ingles/">Página Principal</a></div>  -->
+        <span>©2014</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

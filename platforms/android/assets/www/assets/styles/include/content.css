@@ -1,0 +1,381 @@
+/**********************
+	Estilos Lección
+**********************/
+.themeR{
+	background-color: #e24f4f!important;
+}
+.themeB{
+	background-color: #179ffd!important;
+}
+.themeG{
+	background-color: #88e3a5!important;
+}
+.borderR{
+	border: 1px solid #e24f4f!important;
+}
+.borderB{
+	border: 1px solid #179ffd!important;
+}
+.borderG{
+	border: 1px solid #88e3a5!important;
+}
+/****************************
+  	Título de la lección 
+****************************/
+.cont-inicioleccion{
+	margin: 20px auto;
+	width: 600px;
+	height: 137px;
+	background-image: url('img/img1-inglesT.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.cont-titulo{
+	width: 100%;
+	position: absolute;
+	height: 50px;
+	bottom: 0px;
+	background-color: rgb(204, 204, 204);
+}
+.cont-titulo h2{
+	margin: 0;
+	line-height: 50px;
+	padding-left: 10px;
+	position: relative;
+	color: rgb(255, 255, 255);
+}
+/****************************
+  	Cusdro de Instrucción 
+****************************/
+.cont-instruccion{
+	margin: 0 auto;
+	width: 100%;
+	background-color: #FFF;
+	position: relative;
+	border-radius: 10px; 
+}
+.instruccion {
+	width: 95%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: justify;
+	display: block;
+	color: #2DBBDD;
+	font-weight: bold;
+}
+.instruccion p{
+	margin: 0;
+}
+.cont-contgeneral{
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+}
+.cont-contgeneral .cont-actividad{
+	background: #EFF1F7;
+}
+.tit-contgeneral{
+	background-color: #11BFDD;
+	height: 50px;
+	border-radius: 10px;
+}
+.tit-contgeneral h2{
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	position: relative;
+	color: rgb(255, 255, 255);
+	padding-left: 10px;
+}
+.text-generico{
+	height: 100%;
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	text-align: center;
+	color: #A5ADC0;
+	border-radius: 10px;
+}
+.text-generico p{
+	text-align: left;
+	word-wrap: break-word; 
+}
+.cont-actividades{
+	width: 600px;
+	position: relative;
+	margin: 15px auto;
+}
+.cont-actividades ul{
+	padding-left: 10px;
+}
+.cont-actividades ul li{
+	text-align: center;
+	margin: 0;
+	padding-left: 0px;
+	padding-top: 10px;
+	display: inline-block;
+	list-style: none;
+}
+.text-generico .cont-actividad{
+	margin-bottom: 10px;
+}
+.text-generico .cont-imagen.imagen{
+	height: 155px;
+	background-size: 100%;
+}
+/******************************************
+	Cuadro de Ejemplos y Vocabulario
+******************************************/
+.cont-subtitle{
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+.subtitle-text{
+	width: 95%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: justify;
+	display: block;
+	color: rgb(131, 131, 131);
+	border-bottom: 2px solid rgb(204, 204, 204);
+}
+/*****************************************
+  	Contenedores de Audio con Imagen 
+*****************************************/
+.cont-actividad{
+	width: 30%;
+	padding: 10px;
+	background-color: #FFF;
+	display: inline-block;
+	border-radius: 10px;
+	margin-bottom: 4px;
+	vertical-align: top;
+}
+/*DIALOGO*/
+.cont-actividad.dialogo{
+	width: 95%;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border: 1px solid rgb(204, 204, 204);
+}
+.cont-actividad.dialogo .cont-txtaudio{
+	border-bottom: 1px solid rgb(204, 204, 204);
+	position: relative;
+	padding-left: 15px;
+}
+.cont-actividad.dialogo .cont-txtaudio::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: rgb(70, 67, 67);
+}
+.cont-actividad.dialogo .cont-txtaudio span{
+	text-align: left;
+}
+.cont-actividad.dialogo .cont-txtaudio span.txt-ingles{
+	color: #454545;
+}
+.cont-actividad.dialogo .cont-txtaudio span.txt-espanol{
+	color: rgb(151, 144, 144);
+}
+
+
+/*TERMINA DIALOGO*/
+.cont-actividad .cont-imagen{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background: #FFF;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+.cont-actividad .cont-imagen img{
+	display: none;
+}
+.cont-actividad .btn-audio,
+.cont-contgeneral .btn-audio{
+	width: 5em;
+	height: 5em;
+	margin: 0 auto;
+	background: #2DBBDD;
+	position: relative;
+	border-radius: 100%;
+	margin-top: 10px;
+}
+.cont-actividad .btn-audio::before,
+.cont-contgeneral .btn-audio::before{
+	content: "\e605";
+	font-family: "icomoon";
+	font-size: 4em;
+	color: #FFF;
+	position: absolute;
+	left: 13px;
+	top: 1px;
+}
+.cont-contgeneral audio,
+.cont-actividad audio{
+	display: none;
+}
+
+.cont-actividad .cont-txtaudio{
+	margin-top: 5px;
+}
+audio.mediaplugin_html5audio{
+	width: 100%;
+}
+.cont-actividad .cont-txtaudio span{
+	width: 100%;
+	display: block;
+	min-height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-weight: bold;
+}
+.cont-txtaudio span.txt-ingles{
+	color: #2DBBDD;
+}
+.cont-txtaudio span.txt-espanol{
+	color: #7F8281;
+}
+.cont-txtaudio span.txt-pronunciacion{
+	color: rgb(0, 0, 0);
+	font-weight: lighter!important;
+	font-style: italic;
+}
+/****************************
+  	Botón de Actividad 
+****************************/
+.cont-btnactividad{
+	width: 600px;
+	margin: 15px auto;
+	position: relative;
+}
+.cont-btnactividad .btn-actividad{
+	width: 248px;
+	height: 248px;
+	margin: 10px auto;
+	display: block;
+	position: relative;
+	border-radius: 100%;
+	background-color: rgb(204, 204, 204);
+}
+.cont-btnactividad .btn-actividad .circulo-actividad{
+	width: 90%;
+	height: 90%;
+	border-radius: 100%;
+	border: 5px solid rgb(255, 255, 255);
+	background-color: rgb(204, 204, 204);
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}
+.cont-btnactividad .btn-actividad .circulo-actividad h2{
+	position: absolute;
+	bottom: 25px;
+	left: 58px;
+	color: white;
+}
+.cont-btnactividad .btn-actividad .circulo-actividad:before{
+	content: '';
+	width: 115px;
+	height: 115px;
+	position: absolute;
+	background-image: url('img/iconlapiz.svg');
+	background-repeat: no-repeat;
+	background-size: 115px;
+	top: 15px;
+	left: 53px;
+}
+/************
+  	Notas
+************/
+.cont-note{
+	width: 100%;
+	border-radius: 0.5em;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	word-wrap: break-word;	
+}
+.title-note{
+	width: 100%;
+	border-bottom: 0.1em solid #d1d1d1;
+}
+.title-note h3{
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+.cont-text-note{
+	width: 100%;
+	border-top: 0.1em solid #d1d1d1;
+}
+.cont-text-note p{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	padding-left: 2em;
+}
+/*Separadores*/
+.separador{
+	position: relative;
+	background: #FFF;
+	color: #434A52;
+	line-height: 50px;
+	border-radius: 10px; 
+}
+.separador h2{
+	text-align: left;
+	padding-left: 60px;
+}
+.separador::before{
+	content: "";
+	font-family: "icomoon";
+	font-size: 2em;
+	position: absolute;
+	left: 13px;
+	top: 1px;
+}
+.separador.vocabulary::before{
+	content: "\e60b";
+}
+.separador.grammar::before{
+	content: "\e607";
+}
+.separador.reading::before{
+	content: "\e606";
+}
+.separador.activity::before{
+	content: "\e60a";
+}
+/*Actividad*/
+.cont-btn-actividad{
+	margin: 15px auto 0px auto;
+	width: 220px;
+	background: #FFF;
+	height: 210px;
+	border-radius: 10px;
+	position: relative;
+	background-image: url("/dist/images/test.svg");
+	background-repeat: no-repeat;
+	background-position: center 15px;
+	background-size: 140px;
+}
+.cont-btn-actividad a{
+	text-decoration: none;
+}
+.cont-btn-actividad h2{
+	color: #434A52;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
