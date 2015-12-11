@@ -14832,9 +14832,9 @@ window.Modernizr = (function( window, document, undefined ) {
           $(this).click(function (e) {
             e.preventDefault();
             var song = $(this).children('audio').get(0);
-            if (song.paused) {
+            //if (song.paused) {
               song.play();
-            } else song.pause();
+            //} else song.pause();
           });
         });
         $("iframe").each(function () {
