@@ -32,7 +32,7 @@ buildscript {
     // and https://issues.apache.org/jira/browse/CB-8143
     if (gradle.gradleVersion >= "2.2") {
         dependencies {
-            classpath 'com.android.tools.build:gradle:1.0.0+'
+            classpath 'com.android.tools.build:gradle:1.5.0'
         }
     } else if (gradle.gradleVersion >= "2.1") {
         dependencies {
@@ -178,8 +178,8 @@ android {
         }
     }
 
-    compileSdkVersion cdvCompileSdkVersion
-    buildToolsVersion cdvBuildToolsVersion
+    compileSdkVersion 22
+    buildToolsVersion '23.0.2'
 
     if (Boolean.valueOf(cdvBuildMultipleApks)) {
         productFlavors {
@@ -243,8 +243,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
-    debugCompile project(path: "CordovaLib", configuration: "debug")
-    releaseCompile project(path: "CordovaLib", configuration: "release")
+    debugCompile project(path: 'CordovaLib', configuration: 'debug')
+    releaseCompile project(path: 'CordovaLib', configuration: 'release')
     // SUB-PROJECT DEPENDENCIES END
 }
 
