@@ -6009,7 +6009,7 @@ audio.mediaplugin_html5audio {
   height: 210px;
   border-radius: 10px;
   position: relative;
-  background-image: url("/dist/images/test.svg");
+  background-image: url("../images/test.svg");
   background-repeat: no-repeat;
   background-position: center 15px;
   -webkit-background-size: 140px 140px;
@@ -14015,7 +14015,7 @@ input[type="text"], textarea {
   height: 50px;
   width: 100px;
   background-position: center;
-  background-image: url("/dist/images/ILS.svg");
+  background-image: url("../images/ILS.svg");
   background-repeat: no-repeat;
   -webkit-background-size: 85px 85px;
           background-size: 85px;
@@ -14175,7 +14175,7 @@ input[type="text"], textarea {
 #page-footer::before {
   position: absolute;
   content: "";
-  background-image: url("/dist/images/keyboard.png");
+  background-image: url("../images/keyboard.png");
   width: 100%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -14314,7 +14314,7 @@ body.editing .flexsections-level-1 .section.main {
   background-position: 40px 55px;
   -webkit-background-size: 95px 95px;
           background-size: 95px;
-  background-image: url("/dist/images/book.svg"); }
+  background-image: url("../images/book.svg"); }
 
 #page-course-view-flexsections.editing .flexsections-level-1 > .section.main .flexsections-level-2 li.section.main {
   height: auto; }
@@ -14327,7 +14327,7 @@ body.editing .flexsections-level-1 .section.main {
 }*/
 /*Evaluacion*/
 #page-course-view-flexsections .flexsections-level-1 > .section.main .flexsections-level-2 li.section.main:last-child {
-  background-image: url("/dist/images/quizhover.svg");
+  background-image: url("../images/quizhover.svg");
   background-position: 35px 12px; }
 
 #page-course-view-flexsections .flexsections-level-1 > .section.main .flexsections-level-2 .evaluacion > li.section.main {
@@ -14650,7 +14650,7 @@ div.mdl-right a.addsection span {
   list-style: none;
   width: 190px;
   margin: 0 auto;
-  background-image: url("/dist/images/quizhover.svg");
+  background-image: url("../images/quizhover.svg");
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: 50px 23px;
