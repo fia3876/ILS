@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="A1section3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="A1section3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/src/A1section3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2785146">
-              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+            <state vertical-scroll-proportion="-10.882353">
+              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
               <folding>
                 <element signature="e#1899#1950#0" expanded="true" />
                 <element signature="e#3079#3130#0" expanded="true" />
@@ -92,21 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/www/dist/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.37037">
-              <caret line="14825" column="21" selection-start-line="14825" selection-start-column="21" selection-end-line="14825" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/iq/ilstest/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6028278">
+              <caret line="14834" column="12" selection-start-line="14834" selection-start-column="12" selection-end-line="14834" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1734,8 +1724,8 @@
         <option value="$PROJECT_DIR$/assets/www/src/mainA2.html" />
         <option value="$PROJECT_DIR$/assets/www/src/mainB1.html" />
         <option value="$PROJECT_DIR$/assets/www/dist/styles/main.css" />
-        <option value="$PROJECT_DIR$/assets/www/dist/scripts/main.js" />
         <option value="$PROJECT_DIR$/assets/www/src/A1section3.html" />
+        <option value="$PROJECT_DIR$/assets/www/dist/scripts/main.js" />
       </list>
     </option>
   </component>
@@ -2148,14 +2138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/dist/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.37037">
-          <caret line="14825" column="21" selection-start-line="14825" selection-start-column="21" selection-end-line="14825" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/whitelist/WhitelistPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2164,18 +2146,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iq/ilstest/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/src/A1section3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2785146">
-          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        <state vertical-scroll-proportion="-10.882353">
+          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
           <folding>
             <element signature="e#1899#1950#0" expanded="true" />
             <element signature="e#3079#3130#0" expanded="true" />
@@ -2218,6 +2192,22 @@
             <element signature="e#34031#34056#0" expanded="true" />
             <element signature="e#35101#35126#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iq/ilstest/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29813665">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/dist/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6028278">
+          <caret line="14834" column="12" selection-start-line="14834" selection-start-column="12" selection-end-line="14834" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
